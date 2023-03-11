@@ -19,7 +19,10 @@ files:
 
     print("The mission is done! Click 'Check' to earn cool rewards!")
   learner_created: false
-status: Unchecked
+status: Solved
+feedback:
+  message: All tests passed
+  time: "Sat, 11 Mar 2023 15:45:21 UTC"
 code: |
   def number_length(value: int) -> int:
       # your code here
