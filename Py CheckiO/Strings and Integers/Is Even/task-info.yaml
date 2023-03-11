@@ -4,8 +4,8 @@ files:
   visible: true
   text: |-
     def is_even(num: int) -> bool:
-        # your code here
-        return num % 2 == 0
+
+        return num & 1 == 0
 
 
     print("Example:")
@@ -21,7 +21,6 @@ files:
 status: Solved
 code: |-
   def is_even(num: int) -> bool:
-      # return num % 2 == 0
 
       return num & 1 == 0
 
@@ -35,4 +34,4 @@ code: |-
   assert is_even(0) == True
 
   print("The mission is done! Click 'Check Solution' to earn rewards!")
-seconds_from_change: 1424
+seconds_from_change: 1024

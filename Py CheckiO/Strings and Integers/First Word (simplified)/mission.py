@@ -1,6 +1,6 @@
 def first_word(text: str) -> str:
-    # your code here
-    return ""
+
+    return text.split()[0]
 
 
 print("Example:")

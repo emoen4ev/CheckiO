@@ -1,5 +1,4 @@
 def is_even(num: int) -> bool:
-    # return num % 2 == 0
 
     return num & 1 == 0
 
