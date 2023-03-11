@@ -2,10 +2,10 @@ type: checkiO
 files:
 - name: mission.py
   visible: true
-  text: |
+  text: |-
     def backward_string(val: str) -> str:
-        # your code here
-        return None
+
+        return val[::-1]
 
 
     print("Example:")
@@ -19,11 +19,11 @@ files:
 
     print("The mission is done! Click 'Check Solution' to earn rewards!")
   learner_created: false
-status: Unchecked
-code: |
+status: Solved
+code: |-
   def backward_string(val: str) -> str:
-      # your code here
-      return None
+
+      return val[::-1]
 
 
   print("Example:")
@@ -36,4 +36,4 @@ code: |
   assert backward_string("123456789") == "987654321"
 
   print("The mission is done! Click 'Check Solution' to earn rewards!")
-seconds_from_change: 9223372036854775807
+seconds_from_change: 1

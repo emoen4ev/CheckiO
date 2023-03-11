@@ -1,0 +1,50 @@
+<h2>Sort by Extension</h2>
+<!-- Describe task in general -->
+<p>
+    You are given a list of files. You need to sort this list by the file extension. 
+    The files with the same extension (or without one) should be sorted by name.
+</p>
+<p>Some possible cases:</p>
+<ul>
+<li>Filename cannot be an empty string;</li>
+<li>Sorting order: files without name, files without extension, files with name and extension;</li>
+<li>Filename <b class="code">.config</b> or <b class="code">config.</b> is all name with an empty extension;</li>
+<li>Filename like <b class="code">str1.str2.str3</b> has an extension <b class="code">str3</b> and a name <b class="code">str1.str2</b>;</li>
+<li>Filename like <b class="code">.str1.str2</b> has an extension <b class="code">str2</b> and a name <b class="code">.str1</b>.</li>
+</ul>
+<!-- Explain input and output values -->
+<p>
+<strong>Input:</strong> List of strings. 
+</p>
+<p>
+<strong>Output:</strong> List of strings.
+</p>
+<!-- Give some usage examples -->
+<div class="for_info_only">
+<p>
+<strong>Examples:</strong>
+</p>
+<pre class="brush: python">assert sort_by_ext([&quot;1.cad&quot;, &quot;1.bat&quot;, &quot;1.aa&quot;]) == [&quot;1.aa&quot;, &quot;1.bat&quot;, &quot;1.cad&quot;]
+assert sort_by_ext([&quot;1.cad&quot;, &quot;1.bat&quot;, &quot;1.aa&quot;, &quot;2.bat&quot;]) == [
+    &quot;1.aa&quot;,
+    &quot;1.bat&quot;,
+    &quot;2.bat&quot;,
+    &quot;1.cad&quot;,
+]
+assert sort_by_ext([&quot;1.cad&quot;, &quot;1.bat&quot;, &quot;1.aa&quot;, &quot;.bat&quot;]) == [
+    &quot;.bat&quot;,
+    &quot;1.aa&quot;,
+    &quot;1.bat&quot;,
+    &quot;1.cad&quot;,
+]
+assert sort_by_ext([&quot;1.cad&quot;, &quot;1.bat&quot;, &quot;.aa&quot;, &quot;.bat&quot;]) == [
+    &quot;.aa&quot;,
+    &quot;.bat&quot;,
+    &quot;1.bat&quot;,
+    &quot;1.cad&quot;,
+]
+</pre>
+</div>
+
+
+<p><a href="https://py.checkio.org/en/mission/sort-by-extension">See the task on CheckiO</a></p>

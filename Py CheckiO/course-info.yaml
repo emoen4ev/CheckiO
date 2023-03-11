@@ -9,4 +9,5 @@ programming_language: Python
 programming_language_version: 3.x
 content:
 - Strings and Integers
+- List but not the least
 mode: Study

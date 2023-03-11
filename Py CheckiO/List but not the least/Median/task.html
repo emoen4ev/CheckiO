@@ -1,0 +1,44 @@
+<h2>Median</h2>
+<div class="story" style="margin-bottom: 0">
+<div style="text-align: center">
+<img alt="elki" src="https://d17mnqrx9pmt3e.cloudfront.net/media/missions/media/e412c7aa5ddb4845a7cfdf394d070c0c/elki.png" title="elki" width="600px"/>
+</div>
+</div>
+<p>
+    A median is a numerical value separating the upper half of a <strong>sorted</strong> list of numbers from the lower half. In a list where there are an odd number of entities, the median is the number found in the middle of the list. If the list contains an even number of entities, then there is no single middle value, instead the median becomes the average of the two numbers found in the middle. For this mission, you are given a non-empty list of natural integers. With it, you must separate the upper half of the numbers from the lower half and find the median.
+</p>
+<p>
+    If you want to practice more with the similar case, try
+    <a href="https://py.checkio.org/mission/middle-characters/share/0ec0e10f57f485a397fb9a29d9a8c199/" target="_blank">Middle Characters</a> mission.
+</p>
+<p>
+<strong>Input:</strong> A list of integers.
+</p>
+<p>
+<strong>Output:</strong> The median as a float or an integer.
+</p>
+<div class="for_info_only">
+<p>
+<strong>Examples:</strong>
+</p>
+<pre class="brush: python">assert checkio([1, 2, 3, 4, 5]) == 3
+assert checkio([3, 1, 2, 5, 3]) == 3
+assert checkio([1, 300, 2, 200, 1]) == 2
+assert checkio([3, 6, 20, 99, 10, 15]) == 12.5
+</pre>
+</div>
+<p class="for_info_only">
+<strong>How it is used:</strong>
+    The median has usage for Statistics and Probability theory, it has especially significant value for skewed distribution. For example: we want to know average wealth of people from a set of data - 100 people earn $100 in month and 10 people earn $1,000,000. If we average it out, we get $91,000. This is weird value and does nothing to show us the real picture. In this case the median would give to us more useful value and a better picture.
+    <a href="http://en.wikipedia.org/wiki/Median" target="_blank">The Article at Wikipedia.</a>
+</p>
+<p>
+<strong>Preconditions:</strong>
+<ul>
+<li>1 &lt; len(data) ≤ 1000</li>
+<li>all(0 ≤ x &lt; 10 ** 6 for x in data)</li>
+</ul>
+</p>
+
+
+<p><a href="https://py.checkio.org/en/mission/median">See the task on CheckiO</a></p>

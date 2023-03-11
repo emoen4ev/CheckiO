@@ -35,4 +35,4 @@ code: |-
   assert is_even(0) == True
 
   print("The mission is done! Click 'Check Solution' to earn rewards!")
-seconds_from_change: 889
+seconds_from_change: 1424

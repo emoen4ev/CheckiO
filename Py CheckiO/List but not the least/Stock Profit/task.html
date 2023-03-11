@@ -1,0 +1,43 @@
+<h2>Stock Profit</h2>
+<!-- Describe task in general -->
+<p style="text-align: center;">
+<img alt="example" src="https://d17mnqrx9pmt3e.cloudfront.net/media/missions/media/ff84d234232d4692967132d5d6cd64bf/stock.png" style="max-height: 300px" title="example"/>
+</p>
+<p style="text-align: justify;">
+    You are a broker on the stock exchange. You've decided to make just one complete operation: to buy a stock and sell it later to make a profit. “Short-selling” (sell first, buy later) is not allowed in this market.
+</p>
+<p style="text-align: justify;">
+    Buying and selling prices for every distinct moment are the same (in every moment you may either by a stock for price <i>x</i> or sell a stock (if you have it) for the same price <i>x</i>) and are shown in the given list <b class="code">stock</b>.
+</p>
+<p style="text-align: justify;">
+    So, you have to choose, what are the best prices to buy a stock and later sell it to make the maximum profit from the operation. Your function must return this maximum possible profit. If it's not possible to make any profit with given prices (it's &lt;= 0), your function should return 0.
+</p>
+<!-- Explain input and output values -->
+<p>
+<strong>Input:</strong> Stock prices as list of integers.
+</p>
+<p>
+<strong>Output:</strong> Maximum possible profit as integer.
+</p>
+<!-- Give some usage examples -->
+<div class="for_info_only">
+<p>
+<strong>Examples:</strong>
+</p>
+<pre class="brush: python">assert stock_profit([2, 3, 4, 5]) == 3
+assert stock_profit([3, 1, 3, 4, 5, 1]) == 4
+assert stock_profit([4, 3, 2, 1]) == 0
+assert stock_profit([6, 2, 1, 2, 3, 2, 3, 4, 5, 4]) == 4
+</pre>
+<!-- Here you can explain some constraints for input-->
+<!-- The section is optional -->
+<p>
+<strong>Preconditions:</strong>
+<ul>
+<li><i>len(stock) &gt; 1;</i></li>
+<li><i>0 &lt;= price &lt;= 1000.</i></li>
+</ul>
+</p>
+</div>
+
+<p><a href="https://py.checkio.org/en/mission/stock-profit">See the task on CheckiO</a></p>

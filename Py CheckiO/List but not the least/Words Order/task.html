@@ -1,0 +1,34 @@
+<h2>Words Order</h2>
+<!-- Describe task in general -->
+<p>
+    You have a text and a list of words. You need to check if the words in a list appear in the same order as in the given text.
+</p>
+<p> Cases you should expect while solving this challenge:</p>
+<ul>
+<li>a word from the list is not in the text - your function should return <b class="code">False</b>;</li>
+<li>any word can appear more than once in a text - use only the first one;</li>
+<li>two words in the given list are the same - your function should return <b class="code">False</b>;</li>
+<li>the condition is case sensitive, which means <b class="code">'hi'</b> and <b class="code">'Hi'</b> are two different words;</li>
+<li>the text includes only English letters and spaces.</li>
+</ul>
+<!-- Explain input and output values -->
+<p>
+<strong>Input:</strong> Two arguments. The first one is a given text, the second is a list of words.
+</p>
+<p>
+<strong>Output:</strong> A bool.
+</p>
+<!-- Give some usage examples -->
+<div class="for_info_only">
+<p>
+<strong>Examples:</strong>
+</p>
+<pre class="brush: python">assert words_order(&quot;hi world im here&quot;, [&quot;world&quot;, &quot;here&quot;]) == True
+assert words_order(&quot;hi world im here&quot;, [&quot;here&quot;, &quot;world&quot;]) == False
+assert words_order(&quot;hi world im here&quot;, [&quot;world&quot;]) == True
+assert words_order(&quot;hi world im here&quot;, [&quot;world&quot;, &quot;here&quot;, &quot;hi&quot;]) == False
+</pre>
+</div>
+
+
+<p><a href="https://py.checkio.org/en/mission/words-order">See the task on CheckiO</a></p>

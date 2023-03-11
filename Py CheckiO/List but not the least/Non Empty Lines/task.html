@@ -1,0 +1,32 @@
+<h2>Non Empty Lines</h2>
+<!-- Describe task in general -->
+<p>
+    You need to count how many non-empty lines a given text has.
+</p>
+<p>An empty line is a line without symbols or the one that contains only spaces.</p>
+<!-- Explain input and output values -->
+<p>
+<strong>Input: </strong> A text.
+</p>
+<p>
+<strong>Output: </strong> An int. 
+</p>
+<!-- Give some usage examples -->
+<div class="for_info_only">
+<p>
+<strong>Example:</strong>
+</p>
+<pre class="brush: python">assert non_empty_lines(&quot;one simple line\n&quot;) == 1
+assert non_empty_lines(&quot;&quot;) == 0
+assert non_empty_lines(&quot;\nonly one line\n            &quot;) == 1
+assert (
+    non_empty_lines(
+        &quot;\nLorem ipsum dolor sit amet,\n\nconsectetur adipiscing elit\nNam odio nisi, aliquam\n            &quot;
+    )
+    == 3
+)
+</pre>
+</div>
+
+
+<p><a href="https://py.checkio.org/en/mission/non-empty-lines">See the task on CheckiO</a></p>
