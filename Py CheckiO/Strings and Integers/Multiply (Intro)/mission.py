@@ -1,6 +1,10 @@
+from operator import mul
+
+
 def mult_two(a: int, b: int) -> int:
     # your code here
-    return 0
+    # return a * b
+    return mul(a, b)
 
 
 print("Example")

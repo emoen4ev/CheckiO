@@ -2,10 +2,10 @@ type: checkiO
 files:
 - name: mission.py
   visible: true
-  text: |
+  text: |-
     def mult_two(a: int, b: int) -> int:
         # your code here
-        return 0
+        return a * b
 
 
     print("Example")
@@ -16,11 +16,15 @@ files:
 
     print("The first mission is done! Click 'Check' to earn cool rewards!")
   learner_created: false
-status: Unchecked
-code: |
+status: Solved
+code: |-
+  from operator import mul
+
+
   def mult_two(a: int, b: int) -> int:
       # your code here
-      return 0
+      # return a * b
+      return mul(a, b)
 
 
   print("Example")
@@ -30,4 +34,4 @@ code: |
   assert mult_two(0, 1) == 0
 
   print("The first mission is done! Click 'Check' to earn cool rewards!")
-seconds_from_change: 9223372036854775807
+seconds_from_change: 567
