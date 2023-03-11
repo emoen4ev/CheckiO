@@ -19,7 +19,10 @@ files:
 
     print("The mission is done! Click 'Check Solution' to earn rewards!")
   learner_created: false
-status: Unchecked
+status: Solved
+feedback:
+  message: All tests passed
+  time: "Sat, 11 Mar 2023 17:36:05 UTC"
 code: |
   def between_markers(text: str, start: str, end: str) -> str:
       # your code here

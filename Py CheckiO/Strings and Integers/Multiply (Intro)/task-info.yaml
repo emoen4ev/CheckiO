@@ -33,4 +33,4 @@ code: |-
   assert mult_two(0, 1) == 0
 
   print("The first mission is done! Click 'Check' to earn cool rewards!")
-seconds_from_change: 5871
+seconds_from_change: 9744

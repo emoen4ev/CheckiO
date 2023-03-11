@@ -1,6 +1,8 @@
 def between_markers(text: str, start: str, end: str) -> str:
-    # your code here
-    return ""
+    start_index = text.index(start) + 1
+    end_index = text.index(end)
+
+    return text[start_index:end_index]
 
 
 print("Example:")
