@@ -2,10 +2,10 @@ type: checkiO
 files:
 - name: mission.py
   visible: true
-  text: |
+  text: |-
     def is_even(num: int) -> bool:
         # your code here
-        return None
+        return num % 2 == 0
 
 
     print("Example:")
@@ -18,11 +18,12 @@ files:
 
     print("The mission is done! Click 'Check Solution' to earn rewards!")
   learner_created: false
-status: Unchecked
-code: |
+status: Solved
+code: |-
   def is_even(num: int) -> bool:
-      # your code here
-      return None
+      # return num % 2 == 0
+
+      return num & 1 == 0
 
 
   print("Example:")
@@ -34,4 +35,4 @@ code: |
   assert is_even(0) == True
 
   print("The mission is done! Click 'Check Solution' to earn rewards!")
-seconds_from_change: 9223372036854775807
+seconds_from_change: 889
