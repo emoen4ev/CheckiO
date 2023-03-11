@@ -1,6 +1,10 @@
 def goes_after(word: str, first: str, second: str) -> bool:
-    # your code here
-    return False
+    # return first != second and first + second in word
+
+    return (first != second) \
+        and (first in word) \
+        and (second in word) \
+        and (word.index(first) == word.index(second) - 1)
 
 
 print("Example:")

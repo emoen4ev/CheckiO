@@ -2,10 +2,12 @@ type: checkiO
 files:
 - name: mission.py
   visible: true
-  text: |
+  text: |-
     def goes_after(word: str, first: str, second: str) -> bool:
-        # your code here
-        return False
+        return (first != second) \
+            and (first in word) \
+            and (second in word) \
+            and (word.index(first) == word.index(second) - 1)
 
 
     print("Example:")
@@ -22,11 +24,16 @@ files:
 
     print("The mission is done! Click 'Check Solution' to earn rewards!")
   learner_created: false
-status: Unchecked
-code: |
+status: Solved
+feedback:
+  message: All tests passed
+  time: "Sat, 11 Mar 2023 18:16:32 UTC"
+code: |-
   def goes_after(word: str, first: str, second: str) -> bool:
-      # your code here
-      return False
+      return (first != second) \
+          and (first in word) \
+          and (second in word) \
+          and (word.index(first) == word.index(second) - 1)
 
 
   print("Example:")
@@ -42,4 +49,4 @@ code: |
   assert goes_after("world", "d", "w") == False
 
   print("The mission is done! Click 'Check Solution' to earn rewards!")
-seconds_from_change: 9223372036854775807
+seconds_from_change: 1
