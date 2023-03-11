@@ -1,7 +1,7 @@
 def is_acceptable_password(password: str) -> bool:
-    # your code here
-    return len(password) > 6 and True
-    # return False
+    # return len(password) > 6 and True
+
+    return len(password) > 6
 
 
 print("Example:")
