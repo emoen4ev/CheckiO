@@ -1,6 +1,9 @@
 def max_digit(value: int) -> int:
-    # your code here
-    return 0
+    # sequences = [int(x) for x in str(value)]
+    #
+    # return max(sequences)
+
+    return int(max(str(value)))
 
 
 print("Example:")

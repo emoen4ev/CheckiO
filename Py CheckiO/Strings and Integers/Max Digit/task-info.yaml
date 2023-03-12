@@ -2,10 +2,11 @@ type: checkiO
 files:
 - name: mission.py
   visible: true
-  text: |
+  text: |-
     def max_digit(value: int) -> int:
-        # your code here
-        return 0
+        sequences = [int(x) for x in str(value)]
+
+        return max(sequences)
 
 
     print("Example:")
@@ -20,11 +21,15 @@ files:
 
     print("The mission is done! Click 'Check Solution' to earn rewards!")
   learner_created: false
-status: Unchecked
-code: |
+status: Solved
+feedback:
+  message: All tests passed
+  time: "Sun, 12 Mar 2023 12:42:09 UTC"
+code: |-
   def max_digit(value: int) -> int:
-      # your code here
-      return 0
+      sequences = [int(x) for x in str(value)]
+
+      return max(sequences)
 
 
   print("Example:")
@@ -38,4 +43,4 @@ code: |
   assert max_digit(10000) == 1
 
   print("The mission is done! Click 'Check Solution' to earn rewards!")
-seconds_from_change: 9223372036854775807
+seconds_from_change: 1
