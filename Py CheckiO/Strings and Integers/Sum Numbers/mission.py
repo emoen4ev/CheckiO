@@ -1,6 +1,17 @@
 def sum_numbers(text: str) -> int:
-    # your code here
-    return 0
+    # result = 0
+    #
+    # sequences = text.split()
+    #
+    # for el in sequences:
+    #     if el.isdecimal():
+    #         result += int(el)
+    #
+    # return result
+
+    # return sum(map(int, filter(str.isdecimal, text.split())))
+
+    return sum(int(word) for word in text.split() if word.isdecimal())
 
 
 print("Example:")

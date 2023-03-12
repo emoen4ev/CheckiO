@@ -26,7 +26,10 @@ files:
 
     print("The mission is done! Click 'Check Solution' to earn rewards!")
   learner_created: false
-status: Unchecked
+status: Solved
+feedback:
+  message: All tests passed
+  time: "Sun, 12 Mar 2023 13:10:41 UTC"
 code: |
   def sum_numbers(text: str) -> int:
       # your code here

@@ -36,4 +36,4 @@ code: |-
   assert backward_string("123456789") == "987654321"
 
   print("The mission is done! Click 'Check Solution' to earn rewards!")
-seconds_from_change: 79792
+seconds_from_change: 81505
