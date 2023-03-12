@@ -1,6 +1,24 @@
 def checkio(words: str) -> bool:
-    # add your code here
-    return False
+    # counter = 0
+    #
+    # for word in words.split():
+    #
+    #     # counter = (counter + 1) * word.isalpha()
+    #
+    #     if word.isalpha():
+    #         counter += 1
+    #     else:
+    #         counter = 0
+    #
+    #     if counter == 3:
+    #         return True
+    #
+    # return False
+
+    sequence = words.split()
+    new_seq = ''.join(['Y' if word.isalpha() else 'N' for word in sequence])
+
+    return "YYY" in new_seq
 
 
 print("Example:")

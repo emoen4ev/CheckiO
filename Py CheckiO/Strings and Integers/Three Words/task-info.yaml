@@ -2,9 +2,19 @@ type: checkiO
 files:
 - name: mission.py
   visible: true
-  text: |
+  text: |-
     def checkio(words: str) -> bool:
-        # add your code here
+        counter = 0
+
+        for word in words.split():
+            if word.isalpha():
+                counter += 1
+            else:
+                counter = 0
+
+            if counter == 3:
+                return True
+
         return False
 
 
@@ -20,11 +30,32 @@ files:
 
     print("The mission is done! Click 'Check Solution' to earn rewards!")
   learner_created: false
-status: Unchecked
-code: |
+status: Solved
+feedback:
+  message: All tests passed
+  time: "Sun, 12 Mar 2023 11:31:07 UTC"
+code: |-
   def checkio(words: str) -> bool:
-      # add your code here
-      return False
+      # counter = 0
+      #
+      # for word in words.split():
+      #
+      #     # counter = (counter + 1) * word.isalpha()
+      #
+      #     if word.isalpha():
+      #         counter += 1
+      #     else:
+      #         counter = 0
+      #
+      #     if counter == 3:
+      #         return True
+      #
+      # return False
+
+      sequence = words.split()
+      new_seq = ''.join(['1' if word.isalpha() else '0' for word in sequence])
+
+      return "111" in new_seq
 
 
   print("Example:")
@@ -38,4 +69,4 @@ code: |
   assert checkio("Hi") == False
 
   print("The mission is done! Click 'Check Solution' to earn rewards!")
-seconds_from_change: 9223372036854775807
+seconds_from_change: 1003
