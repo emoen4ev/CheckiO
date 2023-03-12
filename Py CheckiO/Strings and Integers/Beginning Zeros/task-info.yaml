@@ -2,10 +2,18 @@ type: checkiO
 files:
 - name: mission.py
   visible: true
-  text: |
+  text: |-
     def beginning_zeros(a: str) -> int:
-        # your code here
-        return 0
+        counter = 0
+
+        for el in a:
+            if el == '0':
+                counter += 1
+            else:
+                return counter
+
+        return counter
+
 
 
     print("Example:")
@@ -21,11 +29,21 @@ files:
 
     print("The mission is done! Click 'Check Solution' to earn rewards!")
   learner_created: false
-status: Unchecked
-code: |
+status: Solved
+feedback:
+  message: All tests passed
+  time: "Sun, 12 Mar 2023 12:01:29 UTC"
+code: |-
   def beginning_zeros(a: str) -> int:
-      # your code here
-      return 0
+      counter = 0
+
+      for el in a:
+          if el == '0':
+              counter += 1
+          else:
+              return counter
+
+      return counter
 
 
   print("Example:")
@@ -40,4 +58,4 @@ code: |
   assert beginning_zeros("0000") == 4
 
   print("The mission is done! Click 'Check Solution' to earn rewards!")
-seconds_from_change: 9223372036854775807
+seconds_from_change: 28

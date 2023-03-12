@@ -34,4 +34,4 @@ code: |-
   assert is_acceptable_password("ashort") == False
 
   print("The mission is done! Click 'Check Solution' to earn rewards!")
-seconds_from_change: 73181
+seconds_from_change: 75003

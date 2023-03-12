@@ -1,6 +1,15 @@
 def beginning_zeros(a: str) -> int:
-    # your code here
-    return 0
+    # counter = 0
+    #
+    # for el in a:
+    #     if el == '0':
+    #         counter += 1
+    #     else:
+    #         return counter
+    #
+    # return counter
+
+    return len(a) - len(a.lstrip('0'))
 
 
 print("Example:")
